@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <title> Mysiph's Site </title>
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <style type="text/css">
+
+   
+            div.clickEffect{
+                position:fixed;
+                box-sizing:border-box;
+                border-style:solid;
+                border-color:#E5DCC5;
+                border-radius:50%;
+                animation:clickEffect 0.4s ease-out;
+                z-index:99999;
+            }
+            @keyframes clickEffect{
+                0%{
+                    opacity:1;
+                    width:0.5em; height:0.5em;
+                    margin:-0.25em;
+                    border-width:0.5rem;
+                }
+                100%{
+                    opacity:0.2;
+                    width:15em; height:15em;
+                    margin:-7.5em;
+                    border-width:0.03rem;
+                }
+            }
+            </style>
+            <script type="text/javascript">
+            function clickEffect(e){
+                var d=document.createElement("div");
+                d.className="clickEffect";
+                d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+                document.body.appendChild(d);
+                d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+            }
+            document.addEventListener('click',clickEffect);
+            </script>
+    </head>
+<body>
+    <a href="#bottom" class="third">go down</a>
+    <a id="top" href="#bottom" class="third"></a>
+    <h1 class="main">welcome to my website.</h1>
+    <h3 class="second"> here you will find all of <a class="second" href="projects.html">my creations</a>.</h3>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <a id="bottom" href="index.html" class="third"></a>
+    <br>
+    <a href="#top" class="third">back to top</a>
+    <br> <br><br> <br> <br> <br> <br> <br>
+    <div id="mouse-circle"></div>
+    <script src="cursor.js"></script>
+</body>
+</html>
+

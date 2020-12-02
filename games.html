@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>HTML Games</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+     <style type="text/css">
+
+   
+        div.clickEffect{
+            position:fixed;
+            box-sizing:border-box;
+            border-style:solid;
+            border-color:#E5DCC5;
+            border-radius:50%;
+            animation:clickEffect 0.4s ease-out;
+            z-index:99999;
+        }
+        @keyframes clickEffect{
+            0%{
+                opacity:1;
+                width:0.5em; height:0.5em;
+                margin:-0.25em;
+                border-width:0.5rem;
+            }
+            100%{
+                opacity:0.2;
+                width:15em; height:15em;
+                margin:-7.5em;
+                border-width:0.03rem;
+            }
+        }
+        </style>
+        <script type="text/javascript">
+        function clickEffect(e){
+            var d=document.createElement("div");
+            d.className="clickEffect";
+            d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+            document.body.appendChild(d);
+            d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+        }
+        document.addEventListener('click',clickEffect);
+        </script>
+    </head>
+<a href="index.html" class="third">Home</a><body>
+    <h1 class="main">html games</h1>
+    <h3 class="second">these are some of the games i have made in html css and js. i'm pretty new to this stuff.</h3>
+    <br><br>
+    <a href="snake.html" class="third">snake</a>
+    <br>
+    <br>
+    <a href="jumpgame.html" class="third">bad dino game</a>
+    <br><br>
+    <a href="draw.html" class="third">draw</a>
+    <br><br>
+    <a href="snaketwo.html" class="third" >speed snake</a>
+    <br><br>
+    <a href='breakout.html' class='third'>breakout</a>
+    <br><br> 
+    <a href='clicktest.html' class='third'>clicktest</a>
+    <br> <br> <br> <br> <br>  <br><br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br>
+
+    <div id="mouse-circle"></div>
+    <script src="cursor.js"></script>
+</body>
+</html>

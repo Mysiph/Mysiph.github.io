@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Mysiph's Projects </title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="favicon.png"> 
+        <style type="text/css">
+
+   
+            div.clickEffect{
+                position:fixed;
+                box-sizing:border-box;
+                border-style:solid;
+                border-color:#E5DCC5;
+                border-radius:50%;
+                animation:clickEffect 0.4s ease-out;
+                z-index:99999;
+            }
+            @keyframes clickEffect{
+                0%{
+                    opacity:1;
+                    width:0.5em; height:0.5em;
+                    margin:-0.25em;
+                    border-width:0.5rem;
+                }
+                100%{
+                    opacity:0.2;
+                    width:15em; height:15em;
+                    margin:-7.5em;
+                    border-width:0.03rem;
+                }
+            }
+            </style>
+            <script type="text/javascript">
+            function clickEffect(e){
+                var d=document.createElement("div");
+                d.className="clickEffect";
+                d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+                document.body.appendChild(d);
+                d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+            }
+            document.addEventListener('click',clickEffect);
+            </script>
+    </head>
+<body>
+     <a href="index.html" class="third">Home</a>
+    
+    <h1 class="main">these are my projects.</h1>
+    <h3 class="second"> i like to work on coding things such as games and websites. i also have a youtube channel.</h3>
+    
+     <a href="https://www.youtube.com/channel/UCRI_SZXVyvmBs0NN1SyP9WA" class="third" >my youtube channel</a>
+    <br><br>
+    
+     <a href="https://mysiph.itch.io" class="third" >my itch.io page</a>
+    <br><br>
+    
+    <a href="games.html" class="third" >my html games</a>
+    <br><br><br>
+    
+    
+    <button style="background-color: #2D2D2A;color:darkseagreen;border-radius: 6px; height: 25px;font-size: 14px; font-family:inherit;">pointless button</button> 
+    <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <div id="mouse-circle"></div>
+    <script src="cursor.js"></script>
+   
+</body>
+</html>
