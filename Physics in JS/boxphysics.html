@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset="utf-8">
+
+  <title>Physics Boxes!</title>
+  <meta name="description" content="i made a little physics sim with matter.js">
+  <meta name="author" content="Mysiph">
+
+  <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+<body>
+   
+  <script src="matter.js"></script>
+  <script type="text/javascript">
+    let engine = Matter.Engine.create();
+
+    let render = Matter.Render.create({
+      element: document.body,
+      engine:engine
+    });
+
+    let ground = Matter.Bodies.rectangle(400,600,810,60, {isStatic:true})
+    let boxA = Matter.Bodies.rectangle(400,200,80,80);
+    let boxB = Matter.Bodies.rectangle(450,50,80,80);
+      
+    let mouse = Matter.Mouse.create(render.canvas);
+    let mouseConstraint = Matter.MouseConstraint.create(engine, {
+        mouse: mouse,
+        constraint: {
+            render: {visible: false}
+  }
+});
+render.mouse = mouse;
+
+    Matter.World.add(engine.world,[boxA,boxB,ground,mouseConstraint]);
+    Matter.Engine.run(engine);
+    Matter.Render.run(render);
+  </script>
+</body>
+</html>
