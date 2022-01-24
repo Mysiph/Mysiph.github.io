@@ -2,7 +2,7 @@
 <html>
     <head> 
         <meta charset="utf-8">
-        <title> Mysiph's Site </title>
+        <title> mysiph </title>
         <link rel="icon" type="image/png" href="favicon.png">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
@@ -33,6 +33,45 @@
                 }
             }
             </style>
+        <style>
+               body { background-color:#33ffcc; }
+        #snow{
+            background: none;
+            font-family: Androgyne;
+            background-image: url('https://cdn.discordapp.com/attachments/885960474632536154/934960780313526272/1.png'), url('https://cdn.discordapp.com/attachments/885960474632536154/934960779822784684/3.png'), url('https://cdn.discordapp.com/attachments/885960474632536154/934960779361402940/2.png');
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index:1;
+            -webkit-animation: snow 1000s linear infinite;
+            -moz-animation: snow 1000s linear infinite;
+            -ms-animation: snow 1000s linear infinite;
+            animation: snow 1000s linear infinite;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+        @keyframes snow {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }
+        @-moz-keyframes snow {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }
+        @-webkit-keyframes snow {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }
+        @-ms-keyframes snow {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }   
+        </style>
             <script type="text/javascript">
             function clickEffect(e){
                 var d=document.createElement("div");
@@ -45,14 +84,7 @@
             </script>
     </head>
 <body>
-    <a href="#bottom" class="third">go down</a>
-    <a id="top" href="#bottom" class="third"></a>
-    <h1 class="main">welcome to my website.</h1>
-    <h3 class="second"> here you will find all of <a class="second" href="projects.html">my creations</a>.</h3>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br>
-    <a id="bottom" href="index.html" class="third"></a>
-    <br>
-    <a href="#top" class="third">back to top</a>
+    <a href=info.html>homepage</a>
     <br> <br><br> <br> <br> <br> <br> <br>
     <div id="mouse-circle"></div>
     <script src="cursor.js"></script>
