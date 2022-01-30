@@ -1,93 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head> 
-        <meta charset="utf-8">
-        <title> mysiph </title>
-        <link rel="icon" type="image/png" href="favicon.png">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-        <style type="text/css">
-
-   
-            div.clickEffect{
-                position:fixed;
-                box-sizing:border-box;
-                border-style:solid;
-                border-color:#E5DCC5;
-                border-radius:50%;
-                animation:clickEffect 0.4s ease-out;
-                z-index:99999;
-            }
-            @keyframes clickEffect{
-                0%{
-                    opacity:1;
-                    width:0.5em; height:0.5em;
-                    margin:-0.25em;
-                    border-width:0.5rem;
-                }
-                100%{
-                    opacity:0.2;
-                    width:15em; height:15em;
-                    margin:-7.5em;
-                    border-width:0.03rem;
-                }
-            }
-            </style>
-        <style>
-               body { background-color:#33ffcc; }
-        #snow{
-            background: none;
-            font-family: Androgyne;
-            background-image: url('https://cdn.discordapp.com/attachments/885960474632536154/934960780313526272/1.png'), url('https://cdn.discordapp.com/attachments/885960474632536154/934960779822784684/3.png'), url('https://cdn.discordapp.com/attachments/885960474632536154/934960779361402940/2.png');
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            z-index:1;
-            -webkit-animation: snow 1000s linear infinite;
-            -moz-animation: snow 1000s linear infinite;
-            -ms-animation: snow 1000s linear infinite;
-            animation: snow 1000s linear infinite;
-            -webkit-transform: translate3d(0,0,0);
-            -moz-transform: translate3d(0,0,0);
-            -ms-transform: translate3d(0,0,0);
-            -o-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
-        }
-        @keyframes snow {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
-        }
-        @-moz-keyframes snow {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
-        }
-        @-webkit-keyframes snow {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
-        }
-        @-ms-keyframes snow {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
-        }   
-        </style>
-            <script type="text/javascript">
-            function clickEffect(e){
-                var d=document.createElement("div");
-                d.className="clickEffect";
-                d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
-                document.body.appendChild(d);
-                d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
-            }
-            document.addEventListener('click',clickEffect);
-            </script>
-    </head>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>mysiph</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/1664fb2d50.js" crossorigin="anonymous"></script>
+</head>
 <body>
-    <a href=info.html>homepage</a>
-    <br> <br><br> <br> <br> <br> <br> <br>
-    <div id="mouse-circle"></div>
-    <script src="cursor.js"></script>
+  
+  <!--why are you looking at my code-->
+
+  <nav class='navbar'> 
+  <ul>
+    <li><a href='index.html'>   <i class="fas fa-home"> </i>Home</a> </li>
+    <li><a href='work.html'>    <i class="fas fa-briefcase"> </i>Projects</a> </li>
+    <li><a href='contact.html'> <i class="fas fa-address-card"> </i>Contact</a> </li>
+    <li><a href='info.html'>    <i class="fas fa-scroll"></i> </i>Legacy</a> </li>
+    
+    
+  
+  </ul>
+  </nav>
+   <br>
+
+  <div id='bigtext'>
+<h1 class='bigmain hvr-float'>hey. i'm mysiph.<h1>
+  </div>
+  
+<div class='bodytext'><p> 
+  I'm an amateur programmer + video creator. currently learning more JS and playing a lot of games.
+  </p> </div>
+  
+  <br>
+  <br>
+  
+<!--
+    https://cdn.discordapp.com/attachments/885960474632536154/935937528593252372/IMG_4735.jpg
+-->
 </body>
 </html>
-
