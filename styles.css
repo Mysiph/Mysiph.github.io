@@ -1,0 +1,124 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+* {
+  padding-right: 15px;
+}
+* {
+  background: #212129;
+  color: #ffffff;
+  font-family: 'Dongle', sans-serif;
+  margin: 0;
+  text-align: right;
+
+  /*transition*/
+  animation: fadeInAnimation ease 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+/*transition continued*/
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+} 
+
+
+
+/*float*/
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-58px);
+  transform: translateY(-58px);
+}
+
+a {
+  font-size:16px;
+  font-family: "Rubik", sans-serif;
+  
+  
+}
+
+.bigmain {
+  font-size:75px;
+  color: #cc4a4d;
+}
+
+.big {
+  font-size:60px;
+  color: #cc4a4d;
+}
+
+p {
+font-size:16px;
+font-family: 'Rubik', sans-serif;
+}
+.bodytext {
+  display: flex;
+  justify-content:right;
+
+}
+#bigtext {
+  height:80px;
+}
+.bigtext2 {
+  height:75px;
+}
+
+.navbar {
+  position:sticky;
+  top:0;
+  display:flex;
+  
+}
+
+ul {
+  list-style-type:none;
+  margin: 0;
+  display: flex;
+  padding-left: 15px;
+  padding-top: 10px;
+  text-align: right; 
+}
+
+li a {
+  color:#ffffff;
+  text-decoration:none;
+  font-family: 'Rubik', sans-serif;
+  transition:200ms;
+}
+li a:hover {
+  font-size:20px;
+  transition:200ms;
+}
+#wrapper {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#videolink {
+  text-decoration:1;
+  color:#cc4a4d;
+}
+.legacy {
+  font-size: 10px;
+  top:0%;
+}
