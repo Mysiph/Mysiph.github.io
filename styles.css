@@ -2,11 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
-
 * {
   padding-right: 15px;
-}
-* {
+  
   background: #212129;
   color: #ffffff;
   font-family: 'Dongle', sans-serif;
@@ -53,7 +51,7 @@
 a {
   font-size:16px;
   font-family: "Rubik", sans-serif;
-  
+  padding-right: 5px;
   
 }
 
