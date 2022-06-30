@@ -1,0 +1,42 @@
+
+* {
+    padding:0;
+    margin:0;
+}
+
+
+h1 {
+    color:white;  
+    font-family: 'Fredoka', sans-serif;
+    font-size: 60px;
+    text-align:center;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#container {
+    background: rgb(131,58,180);
+    background: linear-gradient(33deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #oldlink {
+    align-items:center;
+    justify-content: baseline;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
